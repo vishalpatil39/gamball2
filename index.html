@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamball</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+</head>
+<body>
+    <h1>Gamball</h1>
+    <button id="connect-wallet">Connect Wallet</button>
+    <div class="game-info">
+        <p>Game Start Time: <span id="game-start-time"></span></p>
+    </div>
+    <div class="betting">
+        <h2>Place your bet</h2>
+        <p>Select a ball:</p>
+        <select id="ball-selection">
+            <option value="0">Red</option>
+            <option value="1">Green</option>
+            <option value="2">Blue</option>
+        </select>
+        <div class="ball-container">
+            <div class="ball" id="red-ball" data-value="0"></div>
+            <div class="ball" id="green-ball" data-value="1"></div>
+            <div class="ball" id="blue-ball" data-value="2"></div>
+        </div>
+        <p>Enter bet amount (in Ether):</p>
+        <input type="number" id="bet-amount" step="0.01" min="0">
+        <button id="place-bet">Place Bet</button>
+    </div>
+    <div class="game-actions">
+        <button id="end-game">End Game</button>
+        <button id="start-new-game">Start New Game</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

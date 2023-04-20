@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+}
+
+h1, h2, p {
+    color: white;
+}
+
+#connect-wallet {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #FFC107;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.game-info,
+.betting,
+.game-actions {
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.betting {
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+}
+
+.game-actions {
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    margin-top: 40px;
+}
+
+#ball-selection option {
+    background-color: #141414;
+    color: white;
+}
+
+#ball-selection option[value="0"] {
+    color: #FF4747;
+}
+
+#ball-selection option[value="1"] {
+    color: #47FF59;
+}
+
+#ball-selection option[value="2"] {
+    color: #477BFF;
+}
+
+#bet-amount {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+#place-bet {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #47FF59;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.ball-container {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-bottom: 20px;
+    border: 2px solid white;
+}
+
+.ball {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#red-ball {
+    background: radial-gradient(circle, #ff0000, #800000);
+}
+
+#green-ball {
+    background: radial-gradient(circle, #00ff00, #008000);
+}
+
+#blue-ball {
+    background: radial-gradient(circle, #0000ff, #000080);
+}
+
+.selected {
+    box-shadow: 0 0 10px 2px #ffffff;
+}
